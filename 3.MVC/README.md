@@ -52,3 +52,14 @@ p.title="Друга новина. Вареники з чорницями!"
 p.save()
 Post.objects.all()
 exit()
+
+-----Django admin-----
+py manage.py runserver 9178
+http://localhost:9178/admin
+ctrl+C
+py manage.py createsuperuser
+vova
+
+Qwerty1-
+Qwerty1-
+py manage.py runserver 9178
