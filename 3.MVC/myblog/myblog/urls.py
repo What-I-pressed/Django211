@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homepage),
     path('contact/', views.contact),
-    path('posts/', include('posts.urls'))
+    path('posts/', include('posts.urls')),
+    path("robots.txt", views.RobotsTxtView.as_view(content_type="text/plain"), name="robots"),
 ]
