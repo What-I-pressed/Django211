@@ -27,3 +27,28 @@ py manage.py runserver 9178
 cd myblog
 py manage.py startapp posts
 py manage.py runserver 9178
+
+py manage.py migrate
+py manage.py makemigrations
+py manage.py migrate
+
+-------Testing Django ORM------
+py manage.py shell
+from posts.models import Post
+p=Post()
+p
+p.title="Перша новина. Смачна ковбаса!"
+p.save()
+Post.objects.all()
+exit()
+
+--model Post add str--
+
+py manage.py shell
+from posts.models import Post
+p=Post()
+p
+p.title="Друга новина. Вареники з чорницями!"
+p.save()
+Post.objects.all()
+exit()
