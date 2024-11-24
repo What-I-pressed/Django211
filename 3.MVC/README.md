@@ -63,3 +63,11 @@ vova
 Qwerty1-
 Qwerty1-
 py manage.py runserver 9178
+
+-----Upload image------
+.venv\Scripts\activate.bat
+cd myblog
+pip install Pillow
+-----Add Post col ImageField----
+py manage.py makemigrations
+py manage.py migrate
