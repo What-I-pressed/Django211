@@ -21,3 +21,9 @@ py
 django-admin startproject myblog
 cd myblog
 py manage.py runserver 9178
+
+-------App and Templates--------
+.venv\Scripts\activate.bat
+cd myblog
+py manage.py startapp posts
+py manage.py runserver 9178
