@@ -71,3 +71,12 @@ pip install Pillow
 -----Add Post col ImageField----
 py manage.py makemigrations
 py manage.py migrate
+
+--------Register---------
+.venv\Scripts\activate.bat
+cd myblog
+py manage.py runserver 9178
+ctrl+C
+py manage.py startapp users
+
+py manage.py runserver 9178
